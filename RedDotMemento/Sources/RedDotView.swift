@@ -45,6 +45,7 @@ class RedDotView: UIView {
         layer.cornerRadius = frame.size.width / 2
     }
     
+    /* Need help */
     private func changePosition(to point: CGPoint) {
         print(point)
         DispatchQueue.main.async {
