@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		523A1B8120CAF8D000F90FC3 /* DotMemento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A1B8020CAF8D000F90FC3 /* DotMemento.swift */; };
+		523A1B8320CAF91300F90FC3 /* DotMementoRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A1B8220CAF91300F90FC3 /* DotMementoRecorder.swift */; };
+		523A1B8520CAF93600F90FC3 /* RedDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A1B8420CAF93600F90FC3 /* RedDotView.swift */; };
+		52408E4720CA9C8900FDA2DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52408E4620CA9C8900FDA2DA /* AppDelegate.swift */; };
+		52408E4920CA9C8900FDA2DA /* SceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52408E4820CA9C8900FDA2DA /* SceneController.swift */; };
+		52408E4E20CA9C8B00FDA2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52408E4D20CA9C8B00FDA2DA /* Assets.xcassets */; };
+		52408E5120CA9C8B00FDA2DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52408E4F20CA9C8B00FDA2DA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		523A1B8020CAF8D000F90FC3 /* DotMemento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotMemento.swift; sourceTree = "<group>"; };
+		523A1B8220CAF91300F90FC3 /* DotMementoRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotMementoRecorder.swift; sourceTree = "<group>"; };
+		523A1B8420CAF93600F90FC3 /* RedDotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedDotView.swift; sourceTree = "<group>"; };
+		52408E4320CA9C8900FDA2DA /* RedDotMemento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedDotMemento.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52408E4620CA9C8900FDA2DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52408E4820CA9C8900FDA2DA /* SceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneController.swift; sourceTree = "<group>"; };
+		52408E4D20CA9C8B00FDA2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52408E5020CA9C8B00FDA2DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52408E5220CA9C8B00FDA2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52408E4020CA9C8900FDA2DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52207E5A20CC51F4009FF354 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				523A1B8020CAF8D000F90FC3 /* DotMemento.swift */,
+				523A1B8420CAF93600F90FC3 /* RedDotView.swift */,
+				52207E5D20CC5238009FF354 /* Services */,
+				52207E5C20CC5216009FF354 /* Controllers */,
+				52207E5B20CC51FC009FF354 /* Common */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		52207E5B20CC51FC009FF354 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				52408E4620CA9C8900FDA2DA /* AppDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		52207E5C20CC5216009FF354 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				52408E4820CA9C8900FDA2DA /* SceneController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		52207E5D20CC5238009FF354 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				523A1B8620CAF93D00F90FC3 /* MementoRecorder */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		52207E5E20CC5296009FF354 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				52408E4D20CA9C8B00FDA2DA /* Assets.xcassets */,
+				52408E4F20CA9C8B00FDA2DA /* LaunchScreen.storyboard */,
+				52408E5220CA9C8B00FDA2DA /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		523A1B8620CAF93D00F90FC3 /* MementoRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				523A1B8220CAF91300F90FC3 /* DotMementoRecorder.swift */,
+			);
+			path = MementoRecorder;
+			sourceTree = "<group>";
+		};
+		52408E3A20CA9C8900FDA2DA = {
+			isa = PBXGroup;
+			children = (
+				52408E4520CA9C8900FDA2DA /* RedDotMemento */,
+				52408E4420CA9C8900FDA2DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52408E4420CA9C8900FDA2DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52408E4320CA9C8900FDA2DA /* RedDotMemento.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52408E4520CA9C8900FDA2DA /* RedDotMemento */ = {
+			isa = PBXGroup;
+			children = (
+				52207E5A20CC51F4009FF354 /* Sources */,
+				52207E5E20CC5296009FF354 /* SupportingFiles */,
+			);
+			path = RedDotMemento;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52408E4220CA9C8900FDA2DA /* RedDotMemento */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52408E5520CA9C8B00FDA2DA /* Build configuration list for PBXNativeTarget "RedDotMemento" */;
+			buildPhases = (
+				52408E3F20CA9C8900FDA2DA /* Sources */,
+				52408E4020CA9C8900FDA2DA /* Frameworks */,
+				52408E4120CA9C8900FDA2DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedDotMemento;
+			productName = SwiftCodable;
+			productReference = 52408E4320CA9C8900FDA2DA /* RedDotMemento.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52408E3B20CA9C8900FDA2DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Dimasno1;
+				TargetAttributes = {
+					52408E4220CA9C8900FDA2DA = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 52408E3E20CA9C8900FDA2DA /* Build configuration list for PBXProject "RedDotMemento" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52408E3A20CA9C8900FDA2DA;
+			productRefGroup = 52408E4420CA9C8900FDA2DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52408E4220CA9C8900FDA2DA /* RedDotMemento */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52408E4120CA9C8900FDA2DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52408E5120CA9C8B00FDA2DA /* LaunchScreen.storyboard in Resources */,
+				52408E4E20CA9C8B00FDA2DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52408E3F20CA9C8900FDA2DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52408E4920CA9C8900FDA2DA /* SceneController.swift in Sources */,
+				52408E4720CA9C8900FDA2DA /* AppDelegate.swift in Sources */,
+				523A1B8320CAF91300F90FC3 /* DotMementoRecorder.swift in Sources */,
+				523A1B8120CAF8D000F90FC3 /* DotMemento.swift in Sources */,
+				523A1B8520CAF93600F90FC3 /* RedDotView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52408E4F20CA9C8B00FDA2DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52408E5020CA9C8B00FDA2DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52408E5320CA9C8B00FDA2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52408E5420CA9C8B00FDA2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52408E5620CA9C8B00FDA2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P99EM85EA2;
+				INFOPLIST_FILE = "$(SRCROOT)/RedDotMemento/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dimas.RedDotMemento;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52408E5720CA9C8B00FDA2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P99EM85EA2;
+				INFOPLIST_FILE = "$(SRCROOT)/RedDotMemento/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dimas.RedDotMemento;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52408E3E20CA9C8900FDA2DA /* Build configuration list for PBXProject "RedDotMemento" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52408E5320CA9C8B00FDA2DA /* Debug */,
+				52408E5420CA9C8B00FDA2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52408E5520CA9C8B00FDA2DA /* Build configuration list for PBXNativeTarget "RedDotMemento" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52408E5620CA9C8B00FDA2DA /* Debug */,
+				52408E5720CA9C8B00FDA2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52408E3B20CA9C8900FDA2DA /* Project object */;
+}
