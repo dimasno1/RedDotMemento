@@ -16,7 +16,7 @@ class DotMementoRecorder {
     
     func play() {
         dot.isPlaying = true
-        animate()
+        animate(with: 10.0)
         dot.isPlaying = false
     }
     
@@ -39,22 +39,24 @@ class DotMementoRecorder {
         mementoIndex = mementos.endIndex
     }
     
-    private func animate() {
-        UIView.animateKeyframes(withDuration: 10, delay: 0, options: .calculationModeCubic, animations: {
-            var counter = 0
+    private func animate(with duration: Double) {
+        UIView.animateKeyframes(withDuration: duration, delay: 0, options: .allowUserInteraction, animations: {
+            
+            let fps = Double(self.mementos.count) / duration
+            let oneFrameDuration = 1 / fps
             
             UIView.performWithoutAnimation {
                 self.dot.center = CGPoint(x: self.mementos[1].x, y: self.mementos[1].y)
             }
-            for memento in self.mementos.dropFirst() {
-                let dotCenter = CGPoint(x: memento.x, y: memento.y)
-                
-                UIView.addKeyframe(withRelativeStartTime: (Double(counter) / Double(self.mementos.count)) / 10, relativeDuration: (1 / Double(self.mementos.count)) / 10, animations: {
-                    self.dot.center = dotCenter
-                })
-                counter += 1
+            for x in 1...self.mementos.count - 1 {
+                let dotCenter = CGPoint(x: self.mementos[x].x, y: self.mementos[x].y)
+                UIView.addKeyframe(withRelativeStartTime: (Double(x) * oneFrameDuration) / duration,
+                                   relativeDuration: oneFrameDuration,
+                                   animations: { self.dot.center = dotCenter })
             }
-        }, completion: nil)
+        }, completion: { _ in
+            print("Done")
+        })
     }
     
     private var dot: RedDotView
