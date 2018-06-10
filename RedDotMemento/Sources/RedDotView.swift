@@ -12,11 +12,7 @@ class RedDotView: UIView {
     
     var isPlaying: Bool = false
     
-    var memento: DotMemento {
-        didSet {
-            isPlaying ? changePosition(to: CGPoint(x: memento.x, y: memento.y)) : print("is recording")
-        }
-    }
+    var memento: DotMemento
     
     func getMemento() -> DotMemento {
         return memento
@@ -43,14 +39,5 @@ class RedDotView: UIView {
     
     private func setup() {
         layer.cornerRadius = frame.size.width / 2
-    }
-    
-    /* Need help */
-    private func changePosition(to point: CGPoint) {
-        print(point)
-        DispatchQueue.main.async {
-            self.center.x = point.x
-            self.center.y = point.y
-        }
     }
 }
